@@ -31128,7 +31128,7 @@ Weapon by: 'The One Of Wonders'"
 			{
 			    "damage heal stacks"
                 {
-                    "attribute_class"    "damage heal stacks"
+                    "attribute_class"    "damage_heal_stacks"
                     "value"              "1.25 2 5"
                 }
 				"add uber charge on hit"
@@ -32272,7 +32272,7 @@ Weapon by: 'The One Of Wonders'"
 			{  
 			    "assist charge healer" 
                 {
-                    "attribute_class"    "assist charge healer"
+                    "attribute_class"    "assist_charge_healer"
                     "value"                "5 512 200 5"
                 }
 			    "assist charge healer mechanic"
