@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/weapons/c_models/c_breakrevolver_new/c_breakrevolver_new_large"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}
+

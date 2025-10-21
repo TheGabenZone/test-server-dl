@@ -19044,3 +19044,364 @@
 	"wave"		")weapons/HeavySword_HitWorld.wav"
 
 }
+
+// ------------------------------------------------------------------------------------ //
+// Scout Ten-Gauge
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_ScoutTenGauge.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/TenGaugeScout_Fire.wav"
+}
+
+"Weapon_ScoutTenGauge.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/TenGaugeScout_FireCrit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Strato-bomber
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_StratoBomber.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/StratoBomber_Fire.wav"
+}
+
+"Weapon_StratoBomber.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/StratoBomber_FireCrit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// FIVE HUNDRED. MAGNUM.
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Bellator.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"98, 102"
+	"wave"		")weapons/Bellator_Fire.wav"
+}
+
+"Weapon_Bellator.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"98, 102"
+	"wave"		")weapons/Bellator_FireCrit.wav"
+}
+
+"Weapon_Bellator.Cycle"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".67"
+	"pitch"		"98, 102"
+	"wave"		"weapons/Bellator_Mechanism.wav"
+}
+
+"Weapon_Bellator.SwingOpen"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".67"
+	"wave"		"weapons/Bellator_CylinderOpen.wav"
+}
+
+"Weapon_Bellator.SwingClose"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".67"
+	"wave"		"weapons/Bellator_CylinderClose.wav"
+}
+
+"Weapon_Bellator.ShellLoad"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".67"
+	"pitch"		"98, 102"
+	"rndwave"
+	{
+		"wave"		")weapons\Bellator_ShellLoad.wav"
+		"wave"		")weapons\Bellator_ShellLoad2.wav"
+		"wave"		")weapons\Bellator_ShellLoad3.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// H4N-D Pistol
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_WeldPistol.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"98, 102"
+	"wave"		")weapons/WeldPistol_Fire.wav"
+}
+
+"Weapon_WeldPistol.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"98, 102"
+	"wave"		")weapons/WeldPistol_FireCrit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Super Shorty
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_SuperShorty.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/SuperShorty_Fire.wav"
+}
+
+"Weapon_SuperShorty.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/SuperShorty_FireCrit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Soldier PDW thing
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_AutoPDW.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"96, 102"
+	"wave"		")weapons/AutoPDW_Fire.wav"
+}
+
+"Weapon_AutoPDW.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"96, 102"
+	"wave"		")weapons/AutoPDW_FireCrit.wav"
+}
+
+"Weapon_AutoPDW.BoltCycle"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"0.75"
+	"pitch"		"96, 102"
+	"wave"		"weapons/AutoPDW_BoltCycle.wav"
+}
+
+"Weapon_AutoPDW.ClipOut"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".67"
+	"wave"		"weapons/AutoPDW_MagOut.wav"
+}
+
+"Weapon_AutoPDW.ClipIn"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".67"
+	"wave"		"weapons/AutoPDW_MagIn.wav"
+}
+
+"Weapon_AutoPDW.Slap"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".67"
+	"wave"		"weapons/AutoPDW_Slap.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// BACKCRACKER
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_BackCracker.Miss"
+{
+    "channel"    "CHAN_WEAPON"
+    "soundlevel"    "SNDLVL_NORM"
+    "volume"    "1.0"
+    "rndwave"
+    {
+        "wave"        ")weapons/backcracker_swing_miss.wav"
+    }
+}
+
+
+"Weapon_HeavySword.DrawTaunt"
+{
+	"channel"	"CHAN_VOICE"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.9"
+	"rndwave"
+	{
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "vo/taunts/heavy_taunts04.wav"
+		"wave"      "vo/taunts/heavy_taunts03.wav"
+		"wave"      "vo/heavy_specialweapon05.wav"
+		"wave"      "vo/heavy_laughevil01.wav"
+		"wave"      "vo/heavy_revenge14.wav"
+		"wave"      "vo/heavy_specialweapon09.wav"
+		"wave"      "vo/heavy_domination02.wav"
+		"wave"      "vo/heavy_revenge02.wav"
+		"wave"      "vo/heavy_domination04.wav"
+		"wave"      "vo/heavy_domination14.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// Scout Wakazashi
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_ScoutWakazashi.Draw"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.5"
+	"pitch"		"99, 101"
+	"wave"		")weapons/DemoBotAxe_DrawSwoosh.wav"
+}
+
+"Weapon_ScoutWakazashi.DumassComment"
+{
+	"channel"	"CHAN_VOICE"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.9"
+	"rndwave"
+	{
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "vo/scout_goodjob02.wav"
+		"wave"      "vo/scout_domination13.wav"
+		"wave"      "vo/scout_dominationhvy02.wav"
+		"wave"      "vo/scout_domination17.wav"
+		"wave"      "vo/scout_misc02.wav"
+		"wave"      "vo/scout_specialcompleted12.wav"
+		"wave"      "vo/scout_battlecry02.wav"
+		"wave"      "vo/scout_award02.wav"
+	}
+}
+
+"Weapon_Scout.BeingABigFuckenIdiot"
+{
+	"channel"	"CHAN_VOICE"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.9"
+	"rndwave"
+	{
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "vo/scout_beingshotinvincible08.wav"
+		"wave"      "vo/scout_beingshotinvincible09.wav"
+		"wave"      "vo/scout_beingshotinvincible13.wav"
+		"wave"      "vo/scout_beingshotinvincible14.wav"
+		"wave"      "vo/scout_beingshotinvincible15.wav"
+		"wave"      "vo/scout_beingshotinvincible28.wav"
+		"wave"      "vo/scout_meleedare06.wav"
+	}
+}
+
+"Weapon_Scout.BeingComicallyGoofy"
+{
+	"channel"	"CHAN_VOICE"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.9"
+	"rndwave"
+	{
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "common/null.wav"
+		"wave"      "vo/scout_beingshotinvincible30.wav"
+		"wave"      "vo/scout_beingshotinvincible21.wav"
+		"wave"      "vo/scout_beingshotinvincible17.wav"
+		"wave"      "vo/scout_beingshotinvincible12.wav"
+		"wave"      "vo/scout_stunballhit13.wav"
+		"wave"      "vo/scout_cheers06.wav"
+		"wave"      "vo/scout_meleedare02.wav"
+	}
+}
