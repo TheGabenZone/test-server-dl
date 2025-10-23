@@ -13,7 +13,8 @@
 
 			"item_name"					"B.A.S.E Jumper"
 			"item_type_name"			"Parachute Pack"
-			"item_description"			"I am the rocket man that soars above!"
+			"item_description"			"
+			I am the rocket man that soars above!"
 			"item_logname"				"base_jumper"
 			"item_iconname"				"base_jumper"
 			"image_inventory"			"backpack/workshop/models/c_models/c_paratrooper_pack/c_paratrooper_pack"
@@ -31,6 +32,80 @@
 			{
 				"parachute enabled"					"1 0.5 1 1.5"
 			}
+		}
+		"30001"
+		{
+			"name"						"Anchor"
+			"item_class"				"tf_weapon_anchor"
+            "show_in_armory"			"1"
+			"item_name"					"#TF_Weapon_Anchor"
+			"item_type_name"			"#TF_Weapon_Anchor_Type"
+			"item_description"			"#TF_Weapon_Anchor_Desc"
+			"item_slot"					"melee"
+			"anim_slot"					"item1"
+			"item_logname"				"anchor"
+			"item_iconname"				"anchor"
+			"image_inventory"			"backpack/weapons/w_models/w_anchor"
+			"model_world"				"models/weapons/w_models/w_anchor.mdl"
+			"model_player"				"models/weapons/v_models/v_anchor_soldier.mdl"
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/anchor_wearable.mdl"
+			"extra_wearable_bodygroup_toggle_on_active" "anchor"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+				"demoman"               "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"8 0 -6"
+				"meter_label"							"#TF_Airtime"
+			}
+			"attributes"
+			{
+				"anchor earthquake"
+				{
+					"attribute_class"	"earthquake_attack_active"
+					"value"				"192.0 0.0 4.0"
+				}
+				"earthquake attack mins anchor"
+				{
+					"attribute_class"	"earthquake_attack_mins_anchor"
+					"value"				"0.5 96.0"
+				}
+				"take crits from projectile airborne simple"
+				{
+					"attribute_class"	"take_crits_projectile_airborne_simple"
+					"value"				"256"
+				}
+				"take crits from projectile during blast jump anchor"
+				{
+					"attribute_class"	"take_crits_projectile_blast_jump"
+					"value"				"1"
+				}
+				"gravity mod active increased"
+				{
+					"attribute_class"	"gravity_mod_active"
+					"value"				"1.3"
+                }
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"extra wearable bodygroup toggle active"
+				{
+					"attribute_class"	"extra_wearable_bodygroup_toggle_active"
+					"value"				"anchor"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"		"weapons/melee_anchor_itemselection.wav"
+			"drop_sound"				"weapons/melee_anchor_itemselection_drop.wav"
 		}
 	}
 	"attributes"
