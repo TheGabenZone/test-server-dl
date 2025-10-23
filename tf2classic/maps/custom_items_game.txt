@@ -17,6 +17,8 @@
 			"item_logname"				"base_jumper"
 			"item_iconname"				"base_jumper"
 			"image_inventory"			"backpack/workshop/models/c_models/c_paratrooper_pack/c_paratrooper_pack"
+			"image_inventory_size_w"    "128"
+            "image_inventory_size_h"    "128"
 			"model_player"				"models/workshop/weapons/c_models/c_paratrooper_pack/c_paratrooper_pack.mdl"
 			"loadondemand"				"1"
 			"act_as_wearable"			"1"
