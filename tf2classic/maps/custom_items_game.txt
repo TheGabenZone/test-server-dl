@@ -12,6 +12,7 @@
 			//"bucket_position"			"0"
 
 			"item_name"					"B.A.S.E Jumper"
+			"propername"                "1"
 			"item_type_name"			"Parachute Pack"
 			"item_description"			"
 			I am the rocket man that soars above!"
@@ -35,71 +36,80 @@
 		}
 		"30001"																				
 		{
-		    "name"						"TF_WEAPON_BONESAW_HEALER"
-			"prefab"					"weapon_bonesaw"
+		    "name"						"TF_Weapon_Reserve_Shooter"
+			"item_class"				"tf_weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+			//"bucket"					"0"
+			//"bucket_position"			"0"
+
+			"item_name"					"Reserve Shooter"
+			"propername"                "1"
+			"item_type_name"			"Shotgun"
+			"item_description"			"
+			Shooting them rocket men like clay pidgeons!"
+			"item_logname"				"reserve_shooter"
+			"item_iconname"				"reserve_shooter"
+			"image_inventory"			"backpack/workshop/models/c_models/c_paratrooper_pack/c_paratrooper_pack"
+			"image_inventory_size_w"    "128"
+            "image_inventory_size_h"    "128"
+			"model_player"				"models/workshop/weapons/c_models/c_paratrooper_pack/c_paratrooper_pack.mdl"
+			"loadondemand"				"1"
+			"act_as_wearable"			"1"
+			"used_by_classes"
+			{	
+				"soldier"			 "1"
+				"pyro"               "1"
+			}
+			"static_attrs"
+			{
+				"parachute enabled"					"1 0.5 1 1.5"
+			}
+		}
+		"30002"
+		{
+			"name"						"TF_WEAPON_PICKET"
+			"prefab"					"weapon_bat"
 			"show_in_armory"			"1"
 
-			"propername"				"0"
-			
-			"item_name_color"           "190 200 233 255"
-			"item_name"					"Surgeon's Stimulator"
-			"item_type_name"			"Bonesaw"
-			"item_description"			"
-Sit still schweinhund so I can give you all the healing you could ever need...
+			"propername"				"1"
+			"item_name_color"			"255 240 183 255"
+			"item_name"					"Conscientious Objector"
+			"item_type_name"			"Broken Sign"
+			"item_description"			"(To change Decals, mod in your own!)
 
-Model by: 'Con, Rev, FanCyy'
-Animations by: 'Kylul'
-Weapon by: 'The One Of Wonders'"
-			"item_logname"				"Surgeon's Stimulator"
-			"item_iconname"				"Surgeon's Stimulator"
-			"image_inventory"			"backpack/weapons/c_models/c_bustersaw/c_bustersaw"
-			"model_world"				"models/weapons/c_models/c_bustersaw/c_bustersaw.mdl"			
-			"model_player"				"models/weapons/v_models/v_bustersaw_medic.mdl"
+“Please save the whales, by not smoking
+cigarettes anymore! (or I'll call 9-1-1 on you)”"
+			"item_logname"				"nonnonviolent_protest"
+			"item_iconname"				"nonnonviolent_protest"
+			"image_inventory"			"backpack/workshop/weapons/c_models/c_picket/c_picket"
+			"model_world"				"models/weapons/w_models/w_picket_scout.mdl"
+			"model_player"				"models/weapons/v_models/v_picket_scout.mdl"
 			"attach_to_hands"			"2"
 			"used_by_classes"
 			{
-				"medic"					"1"
+				"scout"					"1"
 			}
-			"attributes"
-			{  
-			    "assist charge healer" 
-                {
-                    "attribute_class"    "assist_charge_healer"
-                    "value"                "5 512 200 5"
-                }
-			    "assist charge healer mechanic"
-				{
-					"attribute_class"	"DMMUY"
-					"value"				"1"
-				}
-				"fire rate penalty"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"1.25"
-				}
-				"Single wep deploy time increased fix"
-				{
-					"attribute_class"	"dmmuy"
-					"value"				"2.0"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"				"2.0"
-				}
-				"override mult deploy weapon time animation"
-                {
-                    "attribute_class"    "override_mult_deploy_time_anim"
-                    "value"               "1.0"
-                }	
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
-				}
+			"static_attrs"
+			{
+				"NOWP weapon"							"1"
+				"Mannly parallel"						"1"
+				"mod custom decal"						"1"
+				"particle on melee hit"					"impact_wood"
+				"min_viewmodel_offset"					"5 0 -10"
+				"melee range multiplier increased"		"1.25"
+				"melee bounds multiplier"				"1.55"
+				"slower weapon draw speed"	"1.15"
 			}
-			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
-			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_Crowbar.Miss"
+				"sound_melee_hit"		"Weapon_BaseballBat.HitFlesh"							// This one pulls its sounds from multiple different weps. I... think that's fine?
+				"sound_melee_hit_world"	"Weapon_Fishwhacker.HitWorld"							// If it gets to be a problem for like, sound mods, let me know!!
+				"sound_burst"			"Weapon_Crowbar.MissCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_wood_weapon_pickup.wav"						// This item sound goes unused normally - I start using it here for "mixed" material weapons
+			"drop_sound"				"#ui/item_wood_weapon_drop.wav"							// Stuff like, how the sign has a wood top but a metal handle. Some other weapons are the opposite, but still mixed material!
 		}
 	}
 	"attributes"
@@ -114,23 +124,11 @@ Weapon by: 'The One Of Wonders'"
 			"effect_type"			"neutral"
 		}
 		"8001"
-        {
-            "name"                  "assist charge healer"
-            "attribute_class"       "assist_charge_healer"
-            "attribute_type"        "string"
-			"description_string"	"Scoring Kill Assists builds up a Healing Charge 
-Alt-Fire: Activate Healing Charge"
-            "description_format"    "value_is_additive"
-			"custom_color"			"223 203 51 255"
-            "effect_type"           "neutral"
-        }
-		"8002"
-        {
-            "name"                  "assist charge healer mechanic"
-            "attribute_type"        "string"
-			"description_string"	"Healing Charge: generate a healing aura that recovers 50 hp over 5 seconds"
-            "description_format"    "value_is_additive"
-            "effect_type"			"positive"
-        }
+		{
+			"name"					"mod custom decal"
+			"description_string"	"Current Decal: Team Pride"									// Side-note; I can't yet make it accept arbitrary text for a variable, only numbers. I'd like to have the Current Decal field be editable!
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
 	}
 }	

@@ -1,4 +1,0 @@
-particles_manifest
-{
-	"file"  	"!particles/medicflames_v2.pcf"
-}
