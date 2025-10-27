@@ -87,7 +87,7 @@ Weapon by: 'The One Of Wonders'"
 				"engy building health penalty"
 				{
 					"attribute_class"	"mult_engy_building_health"								
-					"value"				"0.65"
+					"value"				"0.5"
 				}
 				// Attribute for custom buildings
 				"strange restriction type 1"
