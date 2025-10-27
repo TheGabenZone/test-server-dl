@@ -82,7 +82,7 @@ Weapon by: 'The One Of Wonders'"
 				"dispenser cost decrease fix"
 				{
 					"attribute_class"	"mod_dispenser_cost"								
-					"value"				"0.5"
+					"value"				"0.65"
 				}
 				"engy building health penalty"
 				{
@@ -99,6 +99,55 @@ Weapon by: 'The One Of Wonders'"
 			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
 			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
         }
+		"20001"	
+		{
+		    "name"						"TF_WEAPON_SAPPER_SHREDDER"
+			"prefab"					"weapon_sapper"
+			"item_class"				"tf_weapon_sapper"
+			"item_slot"					"building"
+
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"show_in_armory"			"1"
+			"item_name_color"           "190 200 233 255"
+
+			"item_name"					"Second-Hand Shredder"
+			"item_type_name"			"Shredder"
+			"item_description"			"
+Sometimes a more destructive approach is required.
+
+Model by: 'nano393'
+Weapon by: 'The One Of Wonders'"
+			"item_logname"				"Second-Hand Shredder"
+			"item_iconname"				"Second-Hand Shredder"
+			"image_inventory"			"backpack/weapons/c_models/c_shredder/c_shredder"
+			"model_world"				"models/weapons/c_models/c_shredder/c_shredder.mdl"
+			"model_player"				"models/weapons/c_models/c_shredder/c_shredder.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"spy"				"1"
+			}
+			"attributes"
+			{
+			    "sapper damage bonus"								
+				{
+					"attribute_class"	"mult_sapper_damage"
+					"value"				"1.75"
+				}
+				"sapper health penalty"											
+				{
+					"attribute_class"	"mult_sapper_health"
+					"value"				"0.25"
+				}
+				"sapper damages self fix"											
+				{
+					"attribute_class"	"sapper_damages_self"
+					"value"				"2"
+				}
+			}
+		}
 	}
 	"attributes"
 	{
@@ -116,8 +165,16 @@ Weapon by: 'The One Of Wonders'"
 			"name"					"dispenser cost decrease fix"
 			"attribute_class"       "mod_dispenser_cost"
 			"description_string"	"Dispenser cost decreased by %s1%"						
-			"description_format"	"value_is_percentage"
+			"description_format"	"value_is_inverted_percentage"
 			"effect_type"			"positive"
+		}
+		"10002"
+		{
+			"name"					"sapper damages self fix"
+			"attribute_class"       "sapper_damages_self"
+			"description_string"	"Sapper self-destructs after %s1%"						
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
 		}
 		"20000" //KOCW Attributes start here
 		{
