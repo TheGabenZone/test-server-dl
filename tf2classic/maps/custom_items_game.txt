@@ -53,7 +53,7 @@ Reworked by: 'The One Of Wonders'"
 				"wearable add cond on right click"
 				{
 					"attribute_class"	"add_wearable_cond_on_secondary_attack"
-					"value"				"17 1.0 8.0"											// This has REALLY weird syntax... but this add the charge cond, for 1.5s, and has it recharge in 12s
+					"value"				"17 2.5 3.0"											// This has REALLY weird syntax... but this add the charge cond, for 1.5s, and has it recharge in 12s
 				}
 				"wearable cond on effect percent"
 				{
