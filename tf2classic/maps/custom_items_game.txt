@@ -79,15 +79,15 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"dispenser_build_rate_multiplier"								
 					"value"				"3.0"
 				}
-				"mod dispenser cost"
+				"dispenser cost decrease fix"
 				{
 					"attribute_class"	"mod_dispenser_cost"								
-					"value"				"0.8"
+					"value"				"0.5"
 				}
 				"engy building health penalty"
 				{
 					"attribute_class"	"mult_engy_building_health"								
-					"value"				"0.5"
+					"value"				"0.9"
 				}
 				// Attribute for custom buildings
 				"strange restriction type 1"
@@ -110,6 +110,14 @@ Weapon by: 'The One Of Wonders'"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
+		}
+		"10001"
+		{
+			"name"					"dispenser cost decrease fix"
+			"attribute_class"       "mod_dispenser_cost"
+			"description_string"	"Dispenser cost decreased by %s1%"						
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
 		}
 		"20000" //KOCW Attributes start here
 		{
