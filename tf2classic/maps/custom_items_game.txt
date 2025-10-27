@@ -95,7 +95,7 @@ Reworked by: 'The One Of Wonders'"
 					"attribute_class"	"allowed_in_medieval_mode"
 					"value"				"1"
 				}
-				"wearer can jump while charging"
+				"test attribute"
 				{
 					"attribute_class"	"wearer_can_jump_while_charging"
 					"value"				"1"
@@ -107,7 +107,7 @@ Reworked by: 'The One Of Wonders'"
 	}
 	"attributes"
 	{
-		"10000" //The Zone's attributes start here
+		"10000"
 		{
 			"name"					"test attribute"
 			"attribute_class"       "wearer_can_jump_while_charging"
