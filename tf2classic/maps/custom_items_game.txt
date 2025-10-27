@@ -1,12 +1,22 @@
+//----------------------------------------------------------------------//
+//
+//	Welcome to the The Zone's Pack!
+//			| VERSION 1.0 |
+// By TheGabenZone ft. weapons from KOCW, Quinnz, NOWP and many others!
+//					-
+//			(For TF2C v2.2.0)
+//---------------------------------------------------------------------//
+
 "gabens_items"
 {
 	"items"
 	{
-		"9000"
+		"10000" //The Zone's weapons start here
 		{
 			"name"						"TF_Weapon_Parachute"
 			"item_class"				"tf_wearable"
 			"show_in_armory"			"1"
+			"item_name_color"           "255 191 0 255" //Orange Item name Colors for items made by me! Gaben!
 			"item_slot"					"secondary"
 			//"bucket"					"0"
 			//"bucket_position"			"0"
@@ -15,7 +25,7 @@
 			"propername"                "1"
 			"item_type_name"			"Parachute Pack"
 			"item_description"			"
-			I am the rocket man that soars above!"
+I am the rocket man that soars above!"
 			"item_logname"				"base_jumper"
 			"item_iconname"				"base_jumper"
 			"image_inventory"			"backpack/workshop/models/c_models/c_paratrooper_pack/c_paratrooper_pack"
@@ -34,78 +44,65 @@
 				"parachute enabled"					"1 0.5 1 1.5"
 			}
 		}
-		"9001"																				
-		{
-		    "name"						"TF_WEAPON_BONESAW_HEALER"
-			"prefab"					"weapon_bonesaw"
-			"show_in_armory"			"1"
+		"20000" //KOCW Weapons start here
+        {
+            "name"						"TF_WEAPON_MINIDEPLOY_PDA"								
+            "prefab"					"weapon_pda"
+            "show_in_armory"			"1"
 
-			"propername"				"0"
-			
-			"item_name_color"           "190 200 233 255"
-			"item_name"					"Surgeon's Stimulator"
-			"item_type_name"			"Bonesaw"
+			"item_name_color"           "190 200 233 255" //This color will be used for items ported from KOCW!
+			"item_name"					"PDA: Handy Pardner"
+			"item_type_name"			"#TF_Weapon_PDA_Engineer"
 			"item_description"			"
-Sit still schweinhund so I can give you all the healing you could ever need...
+It's not about the size, boy... it's about how you use it.
 
-Model by: 'Con, Rev, FanCyy'
-Animations by: 'Kylul'
+Model by: 'Neodos, Frying Dutchman'
+Mini-Dispenser Model by: 'Neodos, Frying Dutchman'
 Weapon by: 'The One Of Wonders'"
-			"item_logname"				"Surgeon's Stimulator"
-			"item_iconname"				"Surgeon's Stimulator"
-			"image_inventory"			"backpack/weapons/c_models/c_bustersaw/c_bustersaw"
-			"model_world"				"models/weapons/c_models/c_bustersaw/c_bustersaw.mdl"			
-			"model_player"				"models/weapons/v_models/v_bustersaw_medic.mdl"
+			"image_inventory"			"backpack/weapons/c_models/c_pda_minidispenser/c_pda_minidispenser"
+			"model_world"				"models/weapons/w_models/w_minidispenser_console.mdl"
+			"model_player"				"models/weapons/v_models/v_minidispenser_console_engineer.mdl"
 			"attach_to_hands"			"2"
 			"used_by_classes"
 			{
-				"medic"					"1"
+				"engineer"				"1"
 			}
-			"attributes"
-			{  
-			    "assist charge healer" 
-                {
-                    "attribute_class"    "custom_assist_charge_healer"
-                    "value"                "5 512 200 5"
-                }
-			    "assist charge healer mechanic"
+            "attributes"
+            {
+			    "Mini-Dispenser"
 				{
-					"attribute_class"	"DMMUY"
+					"attribute_class"	"weh"								
 					"value"				"1"
 				}
-				"fire rate penalty"
+				"engineer dispenser build rate multiplier"
 				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"1.25"
+					"attribute_class"	"dispenser_build_rate_multiplier"								
+					"value"				"3.0"
 				}
-				"Single wep deploy time increased fix"
+				"building cost reduction"
 				{
-					"attribute_class"	"dmmuy"
-					"value"				"2.0"
+					"attribute_class"	"building_cost_reduction"								
+					"value"				"0.8"
 				}
-				"weapon_stattrak_module_scale"
+				"engy building health penalty"
 				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"				"2.0"
+					"attribute_class"	"mult_engy_building_health"								
+					"value"				"0.9"
 				}
-				"override mult deploy weapon time animation"
-                {
-                    "attribute_class"    "override_mult_deploy_time_anim"
-                    "value"               "1.0"
-                }	
-				"crit mod disabled"
+				// Attribute for custom buildings
+				"strange restriction type 1"
 				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
+					"attribute_class"	"custom_dispenser_type"
+					"value" 			"1" // Mini dispenser
 				}
-			}
+            }
 			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
 			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
-		}
+        }
 	}
 	"attributes"
 	{
-		"8000" // Parachute Attribute
+		"10000" //The Zone's attributes start here
 		{
 			"name"					"parachute enabled"
 			"attribute_class"       "parachute_enabled"
@@ -114,30 +111,12 @@ Weapon by: 'The One Of Wonders'"
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
 		}
-		"8001"
-        {
-            "name"                  "assist charge healer"
-            "attribute_class"       "custom_assist_charge_healer"
-            "attribute_type"        "string"
-			"description_string"	"Scoring Kill Assists builds up a Healing Charge 
-Alt-Fire: Activate Healing Charge"
-            "description_format"    "value_is_additive"
-			"custom_color"			"223 203 51 255"
-            "effect_type"           "neutral"
-        }
-		"8002"
-        {
-            "name"                  "assist charge healer mechanic"
-            "attribute_type"        "string"
-			"description_string"	"Healing Charge: generate a healing aura that recovers 50 hp over 5 seconds"
-            "description_format"    "value_is_additive"
-            "effect_type"			"positive"
-        }
-		"8003"
+		"20000" //KOCW Attributes start here
 		{
-			"name"					"Single wep deploy time increased fix"
-			"description_string"	"This weapon deploys %s1% slower"												
-			"description_format"	"value_is_percentage"
+			"name"					"Mini-Dispenser"
+			"description_string"	"Replaces your Dispenser with a Mini-Dispenser"
+			"description_format"	"value_is_additive"
+			"custom_color"			"225 215 0 255"
 			"effect_type"			"negative"
 		}
 	}

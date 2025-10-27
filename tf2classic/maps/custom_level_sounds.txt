@@ -1,0 +1,7 @@
+"Sentry.SingleShot"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	".85"
+	"wave"		"weapons/sentry_shoot.wav"
+}
