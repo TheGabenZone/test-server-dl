@@ -16,7 +16,7 @@
 			"name"						"TF_Weapon_Parachute"
 			"item_class"				"tf_wearable"
 			"show_in_armory"			"1"
-			"item_name_color"           "255 191 0 255" //Orange Item name Colors for items made by me! Gaben!
+			"item_name_color"           "204 85 0 255" //Orange Item name Colors for items made by me! Gaben!
 			"item_slot"					"secondary"
 			//"bucket"					"0"
 			//"bucket_position"			"0"
@@ -71,7 +71,7 @@ Weapon by: 'The One Of Wonders'"
             {
 			    "Mini-Dispenser"
 				{
-					"attribute_class"	"weh"								
+					"attribute_class"	"dummy"								
 					"value"				"1"
 				}
 				"engineer dispenser build rate multiplier"
