@@ -79,15 +79,15 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"dispenser_build_rate_multiplier"								
 					"value"				"3.0"
 				}
-				"building cost reduction"
+				"mod dispenser cost"
 				{
-					"attribute_class"	"building_cost_reduction"								
+					"attribute_class"	"mod_dispenser_cost"								
 					"value"				"0.8"
 				}
 				"engy building health penalty"
 				{
 					"attribute_class"	"mult_engy_building_health"								
-					"value"				"0.9"
+					"value"				"0.65"
 				}
 				// Attribute for custom buildings
 				"strange restriction type 1"
