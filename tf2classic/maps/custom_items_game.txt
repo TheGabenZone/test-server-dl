@@ -121,7 +121,7 @@ Reworked by: 'The One Of Wonders'"
 			"attach_to_hands"			"2"
 			"attributes"
 			{
-				"test attribute"
+				"test attribute 2"
 				{
 					"attribute_class"	"blast_jumping_miss_boost"
 					"value"				"1 1.5"
@@ -134,6 +134,14 @@ Reworked by: 'The One Of Wonders'"
 		"10000"
 		{
 			"name"					"test attribute"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10001"
+		{
+			"name"					"test attribute 2"
 			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
