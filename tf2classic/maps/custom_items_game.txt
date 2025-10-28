@@ -124,7 +124,7 @@ Reworked by: 'The One Of Wonders'"
 				"test attribute 2"
 				{
 					"attribute_class"	"blast_jumping_miss_boost"
-					"value"				"1 1.5"
+					"value"				"1 2.5"
 				}
 			}
 		}
