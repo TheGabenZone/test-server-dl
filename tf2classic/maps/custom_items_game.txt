@@ -104,13 +104,30 @@ Reworked by: 'The One Of Wonders'"
 			"mouse_pressed_sound"		"#ui/item_wood_weapon_pickup.wav"
 			"drop_sound"				"#ui/item_wood_weapon_drop.wav"
 		}
+		"10001"
+		{
+			"name"						"TF_WEAPON_SHOVEL_Test"
+			"prefab"					"weapon_shovel"
+			"baseitem"					"1"
+			"item_description"			"#TF_Weapon_Shovel_Desc"
+			"model_world"				"models/weapons/w_models/w_shovel.mdl"
+			"model_player"				"models/weapons/v_models/v_shovel_soldier.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"test attribute"
+				{
+					"attribute_class"	"blast_jumping_miss_boost"
+					"value"				"1 1.5"
+				}
+			}
+		}
 	}
 	"attributes"
 	{
 		"10000"
 		{
 			"name"					"test attribute"
-			"attribute_class"       "wearer_can_jump_while_charging"
 			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
