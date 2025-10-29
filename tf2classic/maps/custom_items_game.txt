@@ -11,624 +11,243 @@
 {
 	"items"
 	{
-		"5000" //The Zone's weapons start here
+		"10000"
 		{
-			"name"						"TF_Weapon_Parachute"
-			"item_class"				"tf_wearable"
+			"name"						"TF_WEARABLE_SHIELD_TIDETURNER"							// It's finally here! Been waiting for a while to finally make a TF2C v2.1.0 exclusive weapon, so here's this!
+			"item_class"				"tf_wearable"											// This was INITIALLY the Chargin' Targe, but at the suggestion of a friend, changed it to the Tide Turner. You'll see why momentarily...
 			"show_in_armory"			"1"
-			"item_name_color"           "204 85 0 255" //Orange Item name Colors for items made by me! Gaben!
 			"item_slot"					"secondary"
-			//"bucket"					"0"
-			//"bucket_position"			"0"
+			"equip_region"				"arms"
 
-			"item_name"					"B.A.S.E Jumper"
-			"propername"                "1"
-			"item_type_name"			"Parachute Pack"
-			"item_description"			"
-I am the rocket man that soars above!"
-			"item_logname"				"base_jumper"
-			"item_iconname"				"base_jumper"
-			"image_inventory"			"backpack/workshop/models/c_models/c_paratrooper_pack/c_paratrooper_pack"
-			"image_inventory_size_w"    "128"
-            "image_inventory_size_h"    "128"
-			"model_player"				"models/workshop/weapons/c_models/c_paratrooper_pack/c_paratrooper_pack.mdl"
+			"anim_slot"					"FORCE_NOT_USED"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"The Tide-Turner"
+			"item_type_name"			"Broken Wheel"
+			"item_description"			"Alt-Fire: Charge toward your enemies!
+Gain damage resistance while charging (8 sec cooldown)
+
+You had best start running, laddie.
+
+Model by: 'Toad'
+Original Weapon by: Valve
+Reworked by: 'The One Of Wonders'"
+			"item_logname"				"The Tide-Turner"
+			"item_iconname"				"The Tide-Turner"
+			"image_inventory"			"backpack/workshop/weapons/c_models/c_wheel_shield/c_wheel_shield"
+			"model_player"				"models/player/items/tide_turner.mdl"					// Unlike the Targe, this has no viewmodel or anything like that! No reason to...
+			"used_by_classes"
+			{
+				"demoman"				"1"
+			}
 			"loadondemand"				"1"
 			"act_as_wearable"			"1"
-			"used_by_classes"
-			{	
-				"soldier"				"secondary"
-				"demoman"               "primary"
-			}
 			"static_attrs"
 			{
-				"parachute enabled"					"1 0.5 1 1.5"
-			}
-		}
-		"6000" //KOCW Weapons start here
-        {
-            "name"						"TF_WEAPON_MINIDEPLOY_PDA"								
-            "prefab"					"weapon_pda"
-            "show_in_armory"			"1"
-
-			"item_name_color"           "190 200 233 255" //This color will be used for items ported from KOCW!
-			"item_name"					"PDA: Handy Pardner"
-			"item_type_name"			"#TF_Weapon_PDA_Engineer"
-			"item_description"			"
-It's not about the size, boy... it's about how you use it.
-
-Model by: 'Neodos, Frying Dutchman'
-Mini-Dispenser Model by: 'Neodos, Frying Dutchman'
-Weapon by: 'The One Of Wonders'"
-			"image_inventory"			"backpack/weapons/c_models/c_pda_minidispenser/c_pda_minidispenser"
-			"model_world"				"models/weapons/w_models/w_minidispenser_console.mdl"
-			"model_player"				"models/weapons/v_models/v_minidispenser_console_engineer.mdl"
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"engineer"				"1"
-			}
-            "attributes"
-            {
-			    "Mini-Dispenser"
-				{
-					"attribute_class"	"dummy"								
-					"value"				"1"
-				}
-				"engineer dispenser build rate multiplier"
-				{
-					"attribute_class"	"dispenser_build_rate_multiplier"								
-					"value"				"3.0"
-				}
-				"dispenser cost decrease fix"
-				{
-					"attribute_class"	"mod_dispenser_cost"								
-					"value"				"0.65"
-				}
-				"engy building health penalty"
-				{
-					"attribute_class"	"mult_engy_building_health"								
-					"value"				"0.9"
-				}
-				// Attribute for custom buildings
-				"strange restriction type 1"
-				{
-					"attribute_class"	"custom_dispenser_type"
-					"value" 			"1" // Mini dispenser
-				}
-            }
-			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
-			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
-        }
-		"7001"	
-		{
-		    "name"						"TF_WEAPON_SAPPER_SHREDDER"
-			"prefab"					"weapon_sapper"
-			"item_class"				"tf_weapon_sapper"
-			"item_slot"					"building"
-
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-
-			"show_in_armory"			"1"
-			"item_name_color"           "190 200 233 255"
-
-			"item_name"					"Second-Hand Shredder"
-			"item_type_name"			"Shredder"
-			"item_description"			"
-Sometimes a more destructive approach is required.
-
-Model by: 'nano393'
-Weapon by: 'The One Of Wonders'"
-			"item_logname"				"Second-Hand Shredder"
-			"item_iconname"				"Second-Hand Shredder"
-			"image_inventory"			"backpack/weapons/c_models/c_shredder/c_shredder"
-			"model_world"				"models/weapons/c_models/c_shredder/c_shredder.mdl"
-			"model_player"				"models/weapons/c_models/c_shredder/c_shredder.mdl"
-			"attach_to_hands"			"1"
-			"used_by_classes"
-			{
-				"spy"				"1"
+				"meter_label"							"#TF_Charge"							// DOESN'T WORK AARGH
 			}
 			"attributes"
 			{
-			    "sapper damage bonus"								
+				"wearable add cond on right click"
 				{
-					"attribute_class"	"mult_sapper_damage"
-					"value"				"1.75"
+					"attribute_class"	"add_wearable_cond_on_secondary_attack"
+					"value"				"17 2.5 3.0"											// This has REALLY weird syntax... but this add the charge cond, for 1.5s, and has it recharge in 12s
 				}
-				"sapper health penalty"											
+				"wearable cond on effect percent"
 				{
-					"attribute_class"	"mult_sapper_health"
-					"value"				"0.25"
+					"attribute_class"	"add_wearable_cond_on_effect_percent"
+					"value"				"111 0.99"												// Now only triggers at below 75% charge (oh right TT has no crits at 40%) | After transfer this is Minicrit (112) instead of crit (35)
 				}
-				"sapper damages self fix"											
+				"mult shield bash damage"
 				{
-					"attribute_class"	"sapper_damages_self"
-					"value"				"1"
+					"attribute_class"	"mult_shield_bash_damage"
+					"value"				"0.9"													// TECHNICALLY this does less base damage (37 DMG), but shield bash is affected by minicrits, so that brings it back up to 50 DMG - the normal max dmg. This helps replicate the damage increasing over distance...
 				}
-			}
-		}
-		"7002"
-		{
-			"name"						"TF_WEAPON_HEAVY_DOUBLEBARREL"
-			"prefab"					"weapon_shotgun"
-			"show_in_armory"			"1"
-			"item_slot"					"secondary"
-
-			"propername"				"0"
-			"item_name_color"           "190 200 233 255"
-			"item_name"					"Baikal Boomstick"
-			"item_type_name"			"Double-Barrel Shotgun"
-			"item_description"			"
-Gun for bear hunt, is good.
-
-Model by: 'Haau' 'VitreousGlassy'
-Animations by: 'Raptor Dan'
-Weapon by: 'Reagy'"
-			"item_logname" 				"Baikal Boomstick"
-			"item_iconname" 			"Baikal Boomstick"
-			"image_inventory"			"backpack/weapons/c_models/c_baikal_boomstick/c_baikal_boomstick"
-			"model_world"				"models/weapons/custom/w_models/w_baikal_boomstick.mdl"
-			"model_player"				"models/weapons/v_models/v_baikal.mdl"
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"heavy"					"1"
-			}
-			"attributes"
-			{
-			    "Extra Volume Shot Package"
+				"dmg taken from fire reduced"
 				{
-					"attribute_class"	"dmuy"
-					"value"				"1"
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"				"0.85"
 				}
-			    "scattergun has knockback"
+				"dmg taken from blast reduced"
 				{
-					"attribute_class"	"set_scattergun_has_knockback"
-					"value"				"1"
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"				"0.85"
 				}
-				"apply self knockback hidden"
+				"full charge turn control"														// Look at that. Indeed - it doesn't have a turn speed penalty... at ALL. This may be a visual only attribute, but the charging condition itself has no turn limiters...
 				{
-					"attribute_class"	"apply_self_knockback"
-					"value"				"145"
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"50"													// Given how powerful some of the shields are, I felt this was the least egregious, especially since its gimmick already concerns no turn penalties and it's already very wacky in Live TF2
 				}
-				"weapon enemy knockback mod mult hidden"
+				"move speed bonus" 						
 				{
-					"attribute_class"	"weapon_enemy_knockback_mod"
-					"value"				"0.2"
+					"attribute_class"	"mult_player_movespeed"
+					"value" 			"1.05"
 				}
-				"fire rate bonus"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value" 			"0.75"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_bullets_per_shot"
-					"value" 			"3.0"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_dmg"
-					"value" 			"0.445"
-				}
-				"spread penalty"
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"1.33"
-				}
-				"clip size penalty"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value" 			"0.33333333333"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
-				}	
-				"scattergun no reload single"
-				{
-					"attribute_class"	"set_scattergun_no_reload_single"
-					"value"				"1"
-				}
-				"Reload time no anim speed mod"
+				"Wearable Secondary Replacer"
                 {
-                    "attribute_class"    "mult_reload_time_noanimmod"
-                    "value"              "4.5"
-                }	
-                "weapon_stattrak_module_scale"
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"allowed in medieval mode"
 				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"1.1"
-				}				
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+				"test attribute"
+				{
+					"attribute_class"	"wearer_can_jump_while_charging"
+					"value"				"1"
+				}
 			}
-			"visuals"
-			{
-			    "sound_single_shot"		"Weapon_BBstick.Shoot"
-				"sound_burst"			"Weapon_BBstick.ShootCrit"
-				"sound_reload"			"Weapon_SuperShotGun.WorldReload"
-				"tracer_effect"         "bullet_scattergun_tracer01"
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+			"mouse_pressed_sound"		"#ui/item_wood_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_wood_weapon_drop.wav"
 		}
-		"7003"
+		"10001"
 		{
-		    "name"						"TF_WEAPON_GRENADELAUNCHER_HEAVY"									
-			"item_class"				"tf_weapon_grenadelauncher"
+			"name"						"TF_WEAPON_SHOVEL_Test"
+			"prefab"					"weapon_shovel"
 			"show_in_armory"			"1"
-			"bucket"                    "1"
-			"bucket_position"           "1"
+
+			"item_quality"				"rarity2"
+
+			"propername"				"1"
+			"item_name"					"The Test Shovel"
+			"item_type_name"			"Shovel"
+			"item_description"			"#TF_Weapon_Shovel_Desc"
+			"model_world"				"models/weapons/w_models/w_shovel.mdl"
+			"model_player"				"models/weapons/v_models/v_shovel_soldier.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"test attribute 2"
+				{
+					"attribute_class"	"blast_jumping_miss_boost"
+					"value"				"1 2.5"
+				}
+			}
+		}
+		"10002"
+		{
+			"name"						"TF_WEAPON_ENERGY_DRINK" //Hacky fix for taunt -Clock
+			"item_class"				"tf_weapon_lunchbox"									// Technically a Sandvich, with a bunch of complex functions handled off-house by taunts.txt
+			"show_in_armory"			"1"
 			"item_slot"					"secondary"
-			"anim_slot"					"secondary"
+			"anim_slot"					"melee"
+			"equip_region"				"scout_backpack"
+
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 
-			"propername"				"0"
-			"item_name_color"           "190 200 233 255"
-			"item_name"					"Bolshevik Bomber"
-			"item_type_name"			"Grenade Launcher"
-			"item_description"			"
-Shotgun is good.. but sometimes you must make babies go boom too!
+//			"propername"				"1"														// One of the sole exceptions o the "non-stocks have a proper name" rule - only because "The Bonk! Atomic Punch" makes 0 sense
+			"item_name_color"			"255 240 183 255"
+			"item_name"					"Bonk! Atomic Punch"									// As before, "Bonk! Atomic Punch" refers to the radioactive drink inside the can, not the can itself. For similar reasons the phrases "The Toxic Sludge" and "The Mountain Dew" are also awkward to use in similar context of naming!
+			"item_type_name"			"Energy Drink"
+			"item_description"			"Alt-Fire: Share a Drink with a friend!
+(Small health kit, grants Def. Buff)
 
-Model by: 'FiveEyes, Metaru, Kibbleknight, Square'
-Animations by: 'Kylul'
-Weapon by: 'The One Of Wonders'"
-            "item_logname"				"Bolshevik Bomber"
-			"item_iconname"				"Bolshevik Bomber"
-			"image_inventory"			"backpack/weapons/c_models/c_heavygrenadelauncher/c_heavygrenadelauncher"
-			"model_world"				"models/weapons/c_models/c_heavy_chinalake/c_heavy_chinalake.mdl"
-			"model_player"				"models/weapons/v_models/v_china_lake_heavy.mdl"
+“Too. Much. Caffeine.”"
+			"image_inventory"			"backpack/weapons/c_models/c_energy_drink/c_energy_drink"
+			"model_world"				"models/weapons/w_models/w_energy_drink.mdl" //TO DO: Go back in time and tell Valve to make the crit-a-cola red. -Clock
+			"model_player"				"models/weapons/v_models/v_energy_drink_scout.mdl"		// Has a "bite" bodygroup, in the form of an opened pull-tab on the can!
 			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/scout_bonkcooler.mdl"
 			"used_by_classes"
 			{
-				"heavy"					"1"
+				"scout"					"1"
 			}
-			"static_attrs"
+			"static_attrs" //TO DO: Make this less underwhelming. -Clock
 			{
-				"class select override vcd"				"taunt02_v2"	
-				"min_viewmodel_offset"					"5 -2 -10"
+				"NOWP weapon"							"1"
+				"Mannly parallel"						"1"
+				"item_meter_charge_type"				"1"
+				"item_meter_charge_rate"				"22"									// 22s cooldown, like in Live (this doesn't work, though...)
+				"meter_label"							"#TF_EnergyDrink"
+				"min_viewmodel_offset"					"0 0 -5"
+				"allowed in medieval mode"				"1"
+//				"special taunt"							"1"
+				"mod lunchbox critboostable"			"1"										// Tried it, it doesn't really have a reason to want to work with this though
+
+				"apply cond on pickup wearer"			"10 111 3.33"							// NOWP v3.0.0 - I just realized this works! Might be an interesting slant to this and similar weapons, unsure! For now, I reckon having it apply the effect for 1/3rd of the time is fair, not much time to really use it...
 			}
 			"attributes"
 			{
-			    "grenades explode on impact"													
+				"test attribute 3"
 				{
-					"attribute_class"	"DISPLAY_ONLY"
-					"value"				"1"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"1.69"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value"				"1.3"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_explosion_radius"
-					"value"				"0.7"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"1.0"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_explosion_splash_damage"
-					"value"				"0.7"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
-				}
-				"punch angle mod add hidden"
-				{
-					"attribute_class"	"punch_angle_is_constant"
-					"value"				"1"
-				}
-				"self dmg push force hidden"				
-				{
-					"attribute_class"	"mult_dmgself_push_force"
-					"value" 			"0.33"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_projectile_speed"
-					"value"				"0.91"
-				}
-				"grenade no spin"
-				{
-					"attribute_class"	"grenade_no_spin"
-					"value"				"1"
-				}
-				"strange restriction type 1"
-				{
-					"attribute_class"	"set_detonate_mode"
-					"value"				"3"
-				}
-				"mod use custom ammo type" // secondary
-				{
-					"attribute_class"	"mod_use_custom_ammo_type"
-					"value" 			"2"
-				}
-			}
-			"visuals"
-			{
-			    "sound_single_shot"		"Weapon_HeavyGrenadeLauncher.Single"
-				"sound_burst"			"Weapon_HeavyGrenadeLauncher.SingleCrit"
-				"sound_empty"           "Weapon_BarrakadaShotgun.Empty"
-				"sound_reload"          "Weapon_HeavyGrenadeLauncher.Reload"
-			}
-		}
-		"9000" //Evenfall's Weapon start here
-		{
-			"name"						"TF_WEAPON_ASSAULTRIFLE"
-			"item_class"				"tf_weapon_smg"
-			"show_in_armory"			"1"
-			"item_slot"					"secondary"
-			"anim_slot"					"secondary"
-
-			"propername"				"1"
-			"item_name_color"			"244 187 68 255"
-			"item_name"					"Community Service"
-			"item_type_name"			"Assault Rifle"
-			"item_description"			"Weapon reloads its entire clip at once
-
-“Last one alive, lock the door!”
-
-Origin: Revolve
-Tweaks: 'Scribble' / 'Kiri'
-Additional help: 'Sprons'"
-			"item_logname"				"m16"
-			"item_iconname"				"Community Service"
-			"image_inventory"			"backpack\weapons\w_models\w_assault_rifle"
-			"model_world"				"models\weapons\w_models\w_assault_rifle.mdl"
-			"model_player"				"models\weapons\v_models\v_assault_rifle_dm.mdl"
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"soldier"				"1"
-			}
-			"static_attrs"
-			{
-				"fire rate bonus hidden"				"1.0"
-				"always draw tracer"					"1"
-				
-				"punch angle mod add hidden"			"0.25"
-				"punch angle is constant"				"1"
-
-				"min_viewmodel_offset"					"5 0 -10"
-			}
-			"attributes"
-			{
-				"hide_attrib_percentage"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"1.4"
-				}
-				"mod mini-crit airborne"
-				{
-					"attribute_class"	"mini_crit_airborne"
-					"value"				"1"
-				}
-				"spread penalty"
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"1.3"
-				}
-				"slower weapon draw speed"	
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"				"1.20"
-				}
-				"hide_attrib_percentage"
-				{
-					"attribute_class"	"mult_falloff_distance"
-					"value"				"1.50"
-				}
-				"hide_attrib_percentage"
-    			{
-        			"attribute_class"	"mult_clipsize"
-        			"value"				"0.8"
-    			}
-				"hide_attrib_percentage"
-				{
-					"attribute_class"	"mult_maxammo_secondary"
-					"value"				"0.8"
-				}
-				"hide_attrib_percentage"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value"				"1.35"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_AR.Single"
-				"sound_burst"			"Weapon_AR.SingleCrit"
-				"sound_reload"			"Weapon_AR.WorldReload"
-				"tracer_effect"			"bullet_scattergun_tracer01"
-			}
-			"mouse_pressed_sound"		"#items/pickup_large.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
-		}
-		"10000" //Inventorium weapons start here
-		{
-			"name"						"TF_WEAPON_BIGSNIPER"
-			"prefab"					"weapon_sniperrifle"
-			"item_quality"				"unique"
-			"show_in_armory"			"1"
-			"item_slot"					"primary"
-			"anim_slot"					"primary"
-			"propername"				"1"
-			"item_name_color"			"114 181 114 255"
-			"item_name"					"Big Shot"
-			"item_type_name"				"Sniper Rifle"
-			"bucket"					"0"
-			"bucket_position"			"1"
-
-			"item_description"			"Fires grenades
-
-The leading product of a leading salesman.
-
-Note: snoiper boom stick -Clock"
-			"item_logname"				"bigsniper"
-			"item_iconname"				"Bigshot"
-			"image_inventory"				"backpack/bigsniper/c_bigsniper"
-			"model_player"				"models/weapons/c_models/c_bigsniper/c_bigsniper.mdl"
-			"extra_wearable"			"models/player/items/policehat/policehat.mdl"
-			"attach_to_hands"				"1"
-			"used_by_classes"
-			{
-				"sniper"					"1"
-//				"demoman"					"0" //I did give it to him at one point in testing. T-poses when scoping. -Clock
-			}
-			"static_attrs"
-			{
-				"Mombae weapon"							"1"
-				"Heavily modified"						"1"
-				"override projectile type" 				"3"
-				"override projectile type scoped" 		"3" //Was a rocket during this thing's first rework, but i did a quick test and I can do an additive explosion splice! -Clock
-			}
-			"attributes" //The main idea here is to give sniper a short range option which lets him sort of overcome corner peaking and slanted entry/exit paths, but limits his range to compensate. -Clock
-			{
-				"hide_attrib_additive" //Splicing the grenades default explosion radius in. TO DO: Is this radius accurate? -Clock
-				{
-					"attribute_class"	"mult_explosion_radius" //Btw, this is needed because it has none by default on non-explosive item types. -Clock
-					"value"				"146"
-				}
-				"rampup bonus" //Compared to none at all!
-				{
-					"attribute_class"	"mod_custom_rampup"
-					"value"				"1.4"
-				}
-				"sniper charge per sec"															// From S. Sleeper
-				{
-					"attribute_class"	"mult_sniper_charge_per_sec"
-					"value"				"1.33"
-				}
-				"explode on world"
-				{
-					"attribute_class"	"set_detonate_mode"
-					"value"				"3"
-				}
-				"Projectile speed increased"
-				{
-					"attribute_class"	"mult_projectile_speed"
-					"value"				"1.5"
-				}
-				"longer damage falloff distance show" //Still want this to be fairly long range, just not problematically long! -Clock
-				{
-					"attribute_class"	"DISPLAY_ONLY" //Apperently sniper rifles just have a longer falloff range to begin with. 
-					"value"				"2"
-				}
-				"hide_attrib_percentage"
-				{
-					"attribute_class"	"mult_falloff_distance" //No idea how much longer.. just.. longer. -Clock
-					"value"				"1.25"
-				}
-				"blast splash damage decreased"
-				{
-					"attribute_class"	"DISPLAY_ONLY"
-					"value"				"0.9"
-				}
-				"hide_attrib_percentage" //All explosive splash damage from grenades is usually reduced by 50%, which makes no sense here! -Clock
-				{
-					"attribute_class"	"mult_explosion_splash_damage"
-					"value"				"1.8"
-				}
-				"hide_attrib_additive"
-				{
-					"attribute_class"	"mod_rocket_gravity"
-					"value"				"0.6"
-				}
-				"fire rate penalty"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"1.30"
-				}
-				"deploy time increased"
-				{
-					"attribute_class"	"mult_deploy_time"
-					"value" 			"1.30"
-				}
-				"shorter damage falloff distance"
-				{
-					"attribute_class"	"mult_falloff_distance"
-					"value" 			"0.75"
-				}
-				"maxammo primary reduced"
-				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"				"0.6"
-				}
-				"projectiles can be deflected"
-				{
-					"attribute_class"	"DISPLAY_ONLY"
-					"value"				"3"
-				}
-				"custom projectile model"			//Uses the iron bomber projectitle model! -Clock
-				{
-					"attribute_class"	"custom_projectile_model"
-					"value"				"models\weapons\w_models\w_quadball_grenade.mdl"
-				}
-				"hide_attrib_additive"
-				{
-					"attribute_class"	"mult_decloak_rate"										// For the balisong/vanish, the lowest possible number i've found it can be before the game just goes "no, screw you" and rejects it. -Clock
-					"value"				"0.02"
+					"attribute_class"	"bonk_consumption_boost"
+					"value"				"1 10 4"
 				}
 			}
 			"visuals"
 			{
 				"player_bodygroups"
 				{
-					"hat"		"1"
+					"backpack"			"1"
+					"medic_backpack"	"1"
 				}
-				"sound_single_shot"		"Weapon_BigSniper.Single"
-				"sound_burst"			"Weapon_BigSniper.SingleCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_soda_can_pickup.wav"
+			"drop_sound"				"#ui/item_soda_can_drop.wav"
+		}
+		"10003"
+		{
+			"name"						"TF_WEAPON_BOTTLE_Test"
+			"prefab"					"weapon_bottle"
+			"show_in_armory"			"1"
+
+			"item_quality"				"rarity2"
+
+			"propername"				"1"
+			"item_name"					"The Test Bottle"
+			"item_type_name"			"Bottle"
+			"item_description"			"#TF_Weapon_Bottle_Desc"
+			"model_world"				"models/weapons/w_models/w_bottle.mdl"
+			"model_player"				"models/weapons/v_models/v_bottle_demoman.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"test attribute 4"
+				{
+					"attribute_class"	"banner_boost"
+					"value"				"1 450 8 112"
+				}
 			}
 		}
 	}
 	"attributes"
 	{
-		"10000" //The Zone's attributes start here
+		"10000"
 		{
-			"name"					"parachute enabled"
-			"attribute_class"       "parachute_enabled"
-			"description_string"	"Press 'JUMP' key in the air to deploy. Deployed Parachutes slow your descent."
+			"name"					"test attribute"
+			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
 		}
 		"10001"
 		{
-			"name"					"dispenser cost decrease fix"
-			"attribute_class"       "mod_dispenser_cost"
-			"description_string"	"Dispenser cost decreased by %s1%"						
-			"description_format"	"value_is_inverted_percentage"
-			"effect_type"			"positive"
+			"name"					"test attribute 2"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
 		}
 		"10002"
 		{
-			"name"					"sapper damages self fix"
-			"attribute_class"       "sapper_damages_self"
-			"description_string"	"Sapper self-destructs after %s1s"						
+			"name"					"test attribute 3"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
-			"effect_type"			"negative"
+			"effect_type"			"neutral"
 		}
-		"20000" //KOCW Attributes start here
+		"10003"
 		{
-			"name"					"Mini-Dispenser"
-			"description_string"	"Replaces your Dispenser with a Mini-Dispenser"
+			"name"					"test attribute 4"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
-			"custom_color"			"225 215 0 255"
-			"effect_type"			"negative"
+			"effect_type"			"neutral"
 		}
 	}
 }	
