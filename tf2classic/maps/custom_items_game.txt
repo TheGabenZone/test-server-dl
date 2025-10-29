@@ -11,243 +11,178 @@
 {
 	"items"
 	{
-		"10000"
+		"10000" //The Zone's weapons start here
 		{
-			"name"						"TF_WEARABLE_SHIELD_TIDETURNER"							// It's finally here! Been waiting for a while to finally make a TF2C v2.1.0 exclusive weapon, so here's this!
-			"item_class"				"tf_wearable"											// This was INITIALLY the Chargin' Targe, but at the suggestion of a friend, changed it to the Tide Turner. You'll see why momentarily...
+			"name"						"TF_Weapon_Parachute"
+			"item_class"				"tf_wearable"
 			"show_in_armory"			"1"
+			"item_name_color"           "204 85 0 255" //Orange Item name Colors for items made by me! Gaben!
 			"item_slot"					"secondary"
-			"equip_region"				"arms"
+			//"bucket"					"0"
+			//"bucket_position"			"0"
 
-			"anim_slot"					"FORCE_NOT_USED"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-
-			"item_name_color"           "190 200 233 255"
-			"item_name"					"The Tide-Turner"
-			"item_type_name"			"Broken Wheel"
-			"item_description"			"Alt-Fire: Charge toward your enemies!
-Gain damage resistance while charging (8 sec cooldown)
-
-You had best start running, laddie.
-
-Model by: 'Toad'
-Original Weapon by: Valve
-Reworked by: 'The One Of Wonders'"
-			"item_logname"				"The Tide-Turner"
-			"item_iconname"				"The Tide-Turner"
-			"image_inventory"			"backpack/workshop/weapons/c_models/c_wheel_shield/c_wheel_shield"
-			"model_player"				"models/player/items/tide_turner.mdl"					// Unlike the Targe, this has no viewmodel or anything like that! No reason to...
-			"used_by_classes"
-			{
-				"demoman"				"1"
-			}
+			"item_name"					"B.A.S.E Jumper"
+			"propername"                "1"
+			"item_type_name"			"Parachute Pack"
+			"item_description"			"
+I am the rocket man that soars above!"
+			"item_logname"				"base_jumper"
+			"item_iconname"				"base_jumper"
+			"image_inventory"			"backpack/workshop/models/c_models/c_paratrooper_pack/c_paratrooper_pack"
+			"image_inventory_size_w"    "128"
+            "image_inventory_size_h"    "128"
+			"model_player"				"models/workshop/weapons/c_models/c_paratrooper_pack/c_paratrooper_pack.mdl"
 			"loadondemand"				"1"
 			"act_as_wearable"			"1"
+			"used_by_classes"
+			{	
+				"soldier"				"secondary"
+				"demoman"               "primary"
+			}
 			"static_attrs"
 			{
-				"meter_label"							"#TF_Charge"							// DOESN'T WORK AARGH
+				"parachute enabled"					"1 0.5 1 1.5"
 			}
-			"attributes"
-			{
-				"wearable add cond on right click"
-				{
-					"attribute_class"	"add_wearable_cond_on_secondary_attack"
-					"value"				"17 2.5 3.0"											// This has REALLY weird syntax... but this add the charge cond, for 1.5s, and has it recharge in 12s
-				}
-				"wearable cond on effect percent"
-				{
-					"attribute_class"	"add_wearable_cond_on_effect_percent"
-					"value"				"111 0.99"												// Now only triggers at below 75% charge (oh right TT has no crits at 40%) | After transfer this is Minicrit (112) instead of crit (35)
-				}
-				"mult shield bash damage"
-				{
-					"attribute_class"	"mult_shield_bash_damage"
-					"value"				"0.9"													// TECHNICALLY this does less base damage (37 DMG), but shield bash is affected by minicrits, so that brings it back up to 50 DMG - the normal max dmg. This helps replicate the damage increasing over distance...
-				}
-				"dmg taken from fire reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_fire"
-					"value"				"0.85"
-				}
-				"dmg taken from blast reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_explosions"
-					"value"				"0.85"
-				}
-				"full charge turn control"														// Look at that. Indeed - it doesn't have a turn speed penalty... at ALL. This may be a visual only attribute, but the charging condition itself has no turn limiters...
-				{
-					"attribute_class"	"DISPLAY_ONLY"
-					"value"				"50"													// Given how powerful some of the shields are, I felt this was the least egregious, especially since its gimmick already concerns no turn penalties and it's already very wacky in Live TF2
-				}
-				"move speed bonus" 						
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" 			"1.05"
-				}
-				"Wearable Secondary Replacer"
-                {
-					"attribute_class"	"DISPLAY_ONLY"
-					"value"				"1"
-				}
-				"allowed in medieval mode"
-				{
-					"attribute_class"	"allowed_in_medieval_mode"
-					"value"				"1"
-				}
-				"test attribute"
-				{
-					"attribute_class"	"wearer_can_jump_while_charging"
-					"value"				"1"
-				}
-			}
-			"mouse_pressed_sound"		"#ui/item_wood_weapon_pickup.wav"
-			"drop_sound"				"#ui/item_wood_weapon_drop.wav"
 		}
-		"10001"
-		{
-			"name"						"TF_WEAPON_SHOVEL_Test"
-			"prefab"					"weapon_shovel"
-			"show_in_armory"			"1"
+		"20000" //KOCW Weapons start here
+        {
+            "name"						"TF_WEAPON_MINIDEPLOY_PDA"								
+            "prefab"					"weapon_pda"
+            "show_in_armory"			"1"
 
-			"item_quality"				"rarity2"
+			"item_name_color"           "190 200 233 255" //This color will be used for items ported from KOCW!
+			"item_name"					"PDA: Handy Pardner"
+			"item_type_name"			"#TF_Weapon_PDA_Engineer"
+			"item_description"			"
+It's not about the size, boy... it's about how you use it.
 
-			"propername"				"1"
-			"item_name"					"The Test Shovel"
-			"item_type_name"			"Shovel"
-			"item_description"			"#TF_Weapon_Shovel_Desc"
-			"model_world"				"models/weapons/w_models/w_shovel.mdl"
-			"model_player"				"models/weapons/v_models/v_shovel_soldier.mdl"
+Model by: 'Neodos, Frying Dutchman'
+Mini-Dispenser Model by: 'Neodos, Frying Dutchman'
+Weapon by: 'The One Of Wonders'"
+			"image_inventory"			"backpack/weapons/c_models/c_pda_minidispenser/c_pda_minidispenser"
+			"model_world"				"models/weapons/w_models/w_minidispenser_console.mdl"
+			"model_player"				"models/weapons/v_models/v_minidispenser_console_engineer.mdl"
 			"attach_to_hands"			"2"
-			"attributes"
+			"used_by_classes"
 			{
-				"test attribute 2"
-				{
-					"attribute_class"	"blast_jumping_miss_boost"
-					"value"				"1 2.5"
-				}
+				"engineer"				"1"
 			}
-		}
-		"10002"
+            "attributes"
+            {
+			    "Mini-Dispenser"
+				{
+					"attribute_class"	"dummy"								
+					"value"				"1"
+				}
+				"engineer dispenser build rate multiplier"
+				{
+					"attribute_class"	"dispenser_build_rate_multiplier"								
+					"value"				"3.0"
+				}
+				"dispenser cost decrease fix"
+				{
+					"attribute_class"	"mod_dispenser_cost"								
+					"value"				"0.65"
+				}
+				"engy building health penalty"
+				{
+					"attribute_class"	"mult_engy_building_health"								
+					"value"				"0.9"
+				}
+				// Attribute for custom buildings
+				"strange restriction type 1"
+				{
+					"attribute_class"	"custom_dispenser_type"
+					"value" 			"1" // Mini dispenser
+				}
+            }
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+        }
+		"20001"	
 		{
-			"name"						"TF_WEAPON_ENERGY_DRINK" //Hacky fix for taunt -Clock
-			"item_class"				"tf_weapon_lunchbox"									// Technically a Sandvich, with a bunch of complex functions handled off-house by taunts.txt
-			"show_in_armory"			"1"
-			"item_slot"					"secondary"
-			"anim_slot"					"melee"
-			"equip_region"				"scout_backpack"
+		    "name"						"TF_WEAPON_SAPPER_SHREDDER"
+			"prefab"					"weapon_sapper"
+			"item_class"				"tf_weapon_sapper"
+			"item_slot"					"building"
 
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 
-//			"propername"				"1"														// One of the sole exceptions o the "non-stocks have a proper name" rule - only because "The Bonk! Atomic Punch" makes 0 sense
-			"item_name_color"			"255 240 183 255"
-			"item_name"					"Bonk! Atomic Punch"									// As before, "Bonk! Atomic Punch" refers to the radioactive drink inside the can, not the can itself. For similar reasons the phrases "The Toxic Sludge" and "The Mountain Dew" are also awkward to use in similar context of naming!
-			"item_type_name"			"Energy Drink"
-			"item_description"			"Alt-Fire: Share a Drink with a friend!
-(Small health kit, grants Def. Buff)
+			"show_in_armory"			"1"
+			"item_name_color"           "190 200 233 255"
 
-“Too. Much. Caffeine.”"
-			"image_inventory"			"backpack/weapons/c_models/c_energy_drink/c_energy_drink"
-			"model_world"				"models/weapons/w_models/w_energy_drink.mdl" //TO DO: Go back in time and tell Valve to make the crit-a-cola red. -Clock
-			"model_player"				"models/weapons/v_models/v_energy_drink_scout.mdl"		// Has a "bite" bodygroup, in the form of an opened pull-tab on the can!
-			"attach_to_hands"			"2"
-			"extra_wearable"			"models/player/items/scout_bonkcooler.mdl"
+			"item_name"					"Second-Hand Shredder"
+			"item_type_name"			"Shredder"
+			"item_description"			"
+Sometimes a more destructive approach is required.
+
+Model by: 'nano393'
+Weapon by: 'The One Of Wonders'"
+			"item_logname"				"Second-Hand Shredder"
+			"item_iconname"				"Second-Hand Shredder"
+			"image_inventory"			"backpack/weapons/c_models/c_shredder/c_shredder"
+			"model_world"				"models/weapons/c_models/c_shredder/c_shredder.mdl"
+			"model_player"				"models/weapons/c_models/c_shredder/c_shredder.mdl"
+			"attach_to_hands"			"1"
 			"used_by_classes"
 			{
-				"scout"					"1"
-			}
-			"static_attrs" //TO DO: Make this less underwhelming. -Clock
-			{
-				"NOWP weapon"							"1"
-				"Mannly parallel"						"1"
-				"item_meter_charge_type"				"1"
-				"item_meter_charge_rate"				"22"									// 22s cooldown, like in Live (this doesn't work, though...)
-				"meter_label"							"#TF_EnergyDrink"
-				"min_viewmodel_offset"					"0 0 -5"
-				"allowed in medieval mode"				"1"
-//				"special taunt"							"1"
-				"mod lunchbox critboostable"			"1"										// Tried it, it doesn't really have a reason to want to work with this though
-
-				"apply cond on pickup wearer"			"10 111 3.33"							// NOWP v3.0.0 - I just realized this works! Might be an interesting slant to this and similar weapons, unsure! For now, I reckon having it apply the effect for 1/3rd of the time is fair, not much time to really use it...
+				"spy"				"1"
 			}
 			"attributes"
 			{
-				"test attribute 3"
+			    "sapper damage bonus"								
 				{
-					"attribute_class"	"bonk_consumption_boost"
-					"value"				"1 10 4"
+					"attribute_class"	"mult_sapper_damage"
+					"value"				"1.75"
 				}
-			}
-			"visuals"
-			{
-				"player_bodygroups"
+				"sapper health penalty"											
 				{
-					"backpack"			"1"
-					"medic_backpack"	"1"
+					"attribute_class"	"mult_sapper_health"
+					"value"				"0.25"
 				}
-			}
-			"mouse_pressed_sound"		"#ui/item_soda_can_pickup.wav"
-			"drop_sound"				"#ui/item_soda_can_drop.wav"
-		}
-		"10003"
-		{
-			"name"						"TF_WEAPON_BOTTLE_Test"
-			"prefab"					"weapon_bottle"
-			"show_in_armory"			"1"
-
-			"item_quality"				"rarity2"
-
-			"propername"				"1"
-			"item_name"					"The Test Bottle"
-			"item_type_name"			"Bottle"
-			"item_description"			"#TF_Weapon_Bottle_Desc"
-			"model_world"				"models/weapons/w_models/w_bottle.mdl"
-			"model_player"				"models/weapons/v_models/v_bottle_demoman.mdl"
-			"attach_to_hands"			"2"
-			"attributes"
-			{
-				"test attribute 4"
+				"sapper damages self fix"											
 				{
-					"attribute_class"	"banner_boost"
-					"value"				"1 450 8 112"
+					"attribute_class"	"sapper_damages_self"
+					"value"				"1"
 				}
 			}
 		}
 	}
 	"attributes"
 	{
-		"10000"
+		"10000" //The Zone's attributes start here
 		{
-			"name"					"test attribute"
-			"description_string"	"Test attribute"
+			"name"					"parachute enabled"
+			"attribute_class"       "parachute_enabled"
+			"description_string"	"Press 'JUMP' key in the air to deploy. Deployed Parachutes slow your descent."
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
 		}
 		"10001"
 		{
-			"name"					"test attribute 2"
-			"description_string"	"Test attribute"
-			"attribute_type"		"string"							
-			"description_format"	"value_is_additive"
-			"effect_type"			"neutral"
+			"name"					"dispenser cost decrease fix"
+			"attribute_class"       "mod_dispenser_cost"
+			"description_string"	"Dispenser cost decreased by %s1%"						
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
 		}
 		"10002"
 		{
-			"name"					"test attribute 3"
-			"description_string"	"Test attribute"
-			"attribute_type"		"string"							
+			"name"					"sapper damages self fix"
+			"attribute_class"       "sapper_damages_self"
+			"description_string"	"Sapper self-destructs after %s1s"						
 			"description_format"	"value_is_additive"
-			"effect_type"			"neutral"
+			"effect_type"			"negative"
 		}
-		"10003"
+		"20000" //KOCW Attributes start here
 		{
-			"name"					"test attribute 4"
-			"description_string"	"Test attribute"
-			"attribute_type"		"string"							
+			"name"					"Mini-Dispenser"
+			"description_string"	"Replaces your Dispenser with a Mini-Dispenser"
 			"description_format"	"value_is_additive"
-			"effect_type"			"neutral"
+			"custom_color"			"225 215 0 255"
+			"effect_type"			"negative"
 		}
 	}
 }	
