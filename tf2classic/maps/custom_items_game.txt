@@ -176,7 +176,7 @@ Reworked by: 'The One Of Wonders'"
 				"test attribute 3"
 				{
 					"attribute_class"	"bonk_consumption_boost"
-					"value"				"1 6 3"
+					"value"				"1 10 4"
 				}
 			}
 			"visuals"
