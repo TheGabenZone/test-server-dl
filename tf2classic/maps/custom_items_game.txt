@@ -128,6 +128,68 @@ Reworked by: 'The One Of Wonders'"
 				}
 			}
 		}
+		"10002"
+		{
+			"name"						"TF_WEAPON_ENERGY_DRINK" //Hacky fix for taunt -Clock
+			"item_class"				"tf_weapon_lunchbox"									// Technically a Sandvich, with a bunch of complex functions handled off-house by taunts.txt
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+			"anim_slot"					"melee"
+			"equip_region"				"scout_backpack"
+
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+//			"propername"				"1"														// One of the sole exceptions o the "non-stocks have a proper name" rule - only because "The Bonk! Atomic Punch" makes 0 sense
+			"item_name_color"			"255 240 183 255"
+			"item_name"					"Bonk! Atomic Punch"									// As before, "Bonk! Atomic Punch" refers to the radioactive drink inside the can, not the can itself. For similar reasons the phrases "The Toxic Sludge" and "The Mountain Dew" are also awkward to use in similar context of naming!
+			"item_type_name"			"Energy Drink"
+			"item_description"			"Alt-Fire: Share a Drink with a friend!
+(Small health kit, grants Def. Buff)
+
+“Too. Much. Caffeine.”"
+			"image_inventory"			"backpack/weapons/c_models/c_energy_drink/c_energy_drink"
+			"model_world"				"models/weapons/w_models/w_energy_drink.mdl" //TO DO: Go back in time and tell Valve to make the crit-a-cola red. -Clock
+			"model_player"				"models/weapons/v_models/v_energy_drink_scout.mdl"		// Has a "bite" bodygroup, in the form of an opened pull-tab on the can!
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/scout_bonkcooler.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs" //TO DO: Make this less underwhelming. -Clock
+			{
+				"NOWP weapon"							"1"
+				"Mannly parallel"						"1"
+				"item_meter_charge_type"				"1"
+				"item_meter_charge_rate"				"22"									// 22s cooldown, like in Live (this doesn't work, though...)
+				"meter_label"							"#TF_EnergyDrink"
+				"min_viewmodel_offset"					"0 0 -5"
+				"allowed in medieval mode"				"1"
+//				"special taunt"							"1"
+				"mod lunchbox critboostable"			"1"										// Tried it, it doesn't really have a reason to want to work with this though
+
+				"apply cond on pickup wearer"			"10 111 3.33"							// NOWP v3.0.0 - I just realized this works! Might be an interesting slant to this and similar weapons, unsure! For now, I reckon having it apply the effect for 1/3rd of the time is fair, not much time to really use it...
+			}
+			"attributes"
+			{
+				"test attribute 3"
+				{
+					"attribute_class"	"bonk_consumption_boost"
+					"value"				"1 6 3"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"			"1"
+					"medic_backpack"	"1"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_soda_can_pickup.wav"
+			"drop_sound"				"#ui/item_soda_can_drop.wav"
+		}
 	}
 	"attributes"
 	{
@@ -142,6 +204,14 @@ Reworked by: 'The One Of Wonders'"
 		"10001"
 		{
 			"name"					"test attribute 2"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10002"
+		{
+			"name"					"test attribute 3"
 			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
