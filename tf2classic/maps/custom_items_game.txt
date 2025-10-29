@@ -190,6 +190,30 @@ Reworked by: 'The One Of Wonders'"
 			"mouse_pressed_sound"		"#ui/item_soda_can_pickup.wav"
 			"drop_sound"				"#ui/item_soda_can_drop.wav"
 		}
+		"10003"
+		{
+			"name"						"TF_WEAPON_BOTTLE_Test"
+			"prefab"					"weapon_bottle"
+			"show_in_armory"			"1"
+
+			"item_quality"				"rarity2"
+
+			"propername"				"1"
+			"item_name"					"The Test Bottle"
+			"item_type_name"			"Bottle"
+			"item_description"			"#TF_Weapon_Bottle_Desc"
+			"model_world"				"models/weapons/w_models/w_bottle.mdl"
+			"model_player"				"models/weapons/v_models/v_bottle_demoman.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"test attribute 4"
+				{
+					"attribute_class"	"banner_boost"
+					"value"				"1 450 8 112"
+				}
+			}
+		}
 	}
 	"attributes"
 	{
@@ -212,6 +236,14 @@ Reworked by: 'The One Of Wonders'"
 		"10002"
 		{
 			"name"					"test attribute 3"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10003"
+		{
+			"name"					"test attribute 4"
 			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
