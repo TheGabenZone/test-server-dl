@@ -11,7 +11,7 @@
 {
 	"items"
 	{
-		"10000" //The Zone's weapons start here
+		"5000" //The Zone's weapons start here
 		{
 			"name"						"TF_Weapon_Parachute"
 			"item_class"				"tf_wearable"
@@ -44,7 +44,7 @@ I am the rocket man that soars above!"
 				"parachute enabled"					"1 0.5 1 1.5"
 			}
 		}
-		"20000" //KOCW Weapons start here
+		"6000" //KOCW Weapons start here
         {
             "name"						"TF_WEAPON_MINIDEPLOY_PDA"								
             "prefab"					"weapon_pda"
@@ -99,7 +99,7 @@ Weapon by: 'The One Of Wonders'"
 			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
 			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
         }
-		"20001"	
+		"7001"	
 		{
 		    "name"						"TF_WEAPON_SAPPER_SHREDDER"
 			"prefab"					"weapon_sapper"
@@ -148,7 +148,7 @@ Weapon by: 'The One Of Wonders'"
 				}
 			}
 		}
-		"20002"
+		"7002"
 		{
 			"name"						"TF_WEAPON_HEAVY_DOUBLEBARREL"
 			"prefab"					"weapon_shotgun"
@@ -253,7 +253,7 @@ Weapon by: 'Reagy'"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"20003"
+		"7003"
 		{
 		    "name"						"TF_WEAPON_GRENADELAUNCHER_HEAVY"									
 			"item_class"				"tf_weapon_grenadelauncher"
@@ -366,7 +366,7 @@ Weapon by: 'The One Of Wonders'"
 				"sound_reload"          "Weapon_HeavyGrenadeLauncher.Reload"
 			}
 		}
-		"30000" //Evenfall's Weapon start here
+		"9000" //Evenfall's Weapon start here
 		{
 			"name"						"TF_WEAPON_ASSAULTRIFLE"
 			"item_class"				"tf_weapon_smg"
@@ -458,7 +458,7 @@ Additional help: 'Sprons'"
 			"mouse_pressed_sound"		"#items/pickup_large.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"30001" //Inventorium weapons start here
+		"10000" //Inventorium weapons start here
 		{
 			"name"						"TF_WEAPON_BIGSNIPER"
 			"prefab"					"weapon_sniperrifle"
