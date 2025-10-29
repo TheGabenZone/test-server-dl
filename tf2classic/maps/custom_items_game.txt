@@ -458,7 +458,7 @@ Additional help: 'Sprons'"
 			"mouse_pressed_sound"		"#items/pickup_large.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"40000" //Inventorium weapons start here
+		"30001" //Inventorium weapons start here
 		{
 			"name"						"TF_WEAPON_BIGSNIPER"
 			"prefab"					"weapon_sniperrifle"
