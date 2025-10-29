@@ -148,6 +148,224 @@ Weapon by: 'The One Of Wonders'"
 				}
 			}
 		}
+		"20002"
+		{
+			"name"						"TF_WEAPON_HEAVY_DOUBLEBARREL"
+			"prefab"					"weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+
+			"propername"				"0"
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"Baikal Boomstick"
+			"item_type_name"			"Double-Barrel Shotgun"
+			"item_description"			"
+Gun for bear hunt, is good.
+
+Model by: 'Haau' 'VitreousGlassy'
+Animations by: 'Raptor Dan'
+Weapon by: 'Reagy'"
+			"item_logname" 				"Baikal Boomstick"
+			"item_iconname" 			"Baikal Boomstick"
+			"image_inventory"			"backpack/weapons/c_models/c_baikal_boomstick/c_baikal_boomstick"
+			"model_world"				"models/weapons/custom/w_models/w_baikal_boomstick.mdl"
+			"model_player"				"models/weapons/v_models/v_baikal.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"attributes"
+			{
+			    "Extra Volume Shot Package"
+				{
+					"attribute_class"	"dmuy"
+					"value"				"1"
+				}
+			    "scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"				"1"
+				}
+				"apply self knockback hidden"
+				{
+					"attribute_class"	"apply_self_knockback"
+					"value"				"145"
+				}
+				"weapon enemy knockback mod mult hidden"
+				{
+					"attribute_class"	"weapon_enemy_knockback_mod"
+					"value"				"0.2"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" 			"0.75"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" 			"3.0"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 			"0.445"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.33"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" 			"0.33333333333"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}	
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"				"1"
+				}
+				"Reload time no anim speed mod"
+                {
+                    "attribute_class"    "mult_reload_time_noanimmod"
+                    "value"              "4.5"
+                }	
+                "weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.1"
+				}				
+			}
+			"visuals"
+			{
+			    "sound_single_shot"		"Weapon_BBstick.Shoot"
+				"sound_burst"			"Weapon_BBstick.ShootCrit"
+				"sound_reload"			"Weapon_SuperShotGun.WorldReload"
+				"tracer_effect"         "bullet_scattergun_tracer01"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"20003"
+		{
+		    "name"						"TF_WEAPON_GRENADELAUNCHER_HEAVY"									
+			"item_class"				"tf_weapon_grenadelauncher"
+			"show_in_armory"			"1"
+			"bucket"                    "1"
+			"bucket_position"           "1"
+			"item_slot"					"secondary"
+			"anim_slot"					"secondary"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"propername"				"0"
+			"item_name_color"           "190 200 233 255"
+			"item_name"					"Bolshevik Bomber"
+			"item_type_name"			"Grenade Launcher"
+			"item_description"			"
+Shotgun is good.. but sometimes you must make babies go boom too!
+
+Model by: 'FiveEyes, Metaru, Kibbleknight, Square'
+Animations by: 'Kylul'
+Weapon by: 'The One Of Wonders'"
+            "item_logname"				"Bolshevik Bomber"
+			"item_iconname"				"Bolshevik Bomber"
+			"image_inventory"			"backpack/weapons/c_models/c_heavygrenadelauncher/c_heavygrenadelauncher"
+			"model_world"				"models/weapons/c_models/c_heavy_chinalake/c_heavy_chinalake.mdl"
+			"model_player"				"models/weapons/v_models/v_china_lake_heavy.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"taunt02_v2"	
+				"min_viewmodel_offset"					"5 -2 -10"
+			}
+			"attributes"
+			{
+			    "grenades explode on impact"													
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.69"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				"1.3"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"0.7"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.0"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_explosion_splash_damage"
+					"value"				"0.7"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"punch angle mod add hidden"
+				{
+					"attribute_class"	"punch_angle_is_constant"
+					"value"				"1"
+				}
+				"self dmg push force hidden"				
+				{
+					"attribute_class"	"mult_dmgself_push_force"
+					"value" 			"0.33"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"0.91"
+				}
+				"grenade no spin"
+				{
+					"attribute_class"	"grenade_no_spin"
+					"value"				"1"
+				}
+				"strange restriction type 1"
+				{
+					"attribute_class"	"set_detonate_mode"
+					"value"				"3"
+				}
+				"mod use custom ammo type" // secondary
+				{
+					"attribute_class"	"mod_use_custom_ammo_type"
+					"value" 			"2"
+				}
+			}
+			"visuals"
+			{
+			    "sound_single_shot"		"Weapon_HeavyGrenadeLauncher.Single"
+				"sound_burst"			"Weapon_HeavyGrenadeLauncher.SingleCrit"
+				"sound_empty"           "Weapon_BarrakadaShotgun.Empty"
+				"sound_reload"          "Weapon_HeavyGrenadeLauncher.Reload"
+			}
+		}
 		"30000" //Evenfall's Weapon start here
 		{
 			"name"						"TF_WEAPON_ASSAULTRIFLE"
@@ -239,6 +457,142 @@ Additional help: 'Sprons'"
 			}
 			"mouse_pressed_sound"		"#items/pickup_large.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"40000" //Inventorium weapons start here
+		{
+			"name"						"TF_WEAPON_BIGSNIPER"
+			"prefab"					"weapon_sniperrifle"
+			"item_quality"				"unique"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+			"anim_slot"					"primary"
+			"propername"				"1"
+			"item_name_color"			"114 181 114 255"
+			"item_name"					"Big Shot"
+			"item_type_name"				"Sniper Rifle"
+			"bucket"					"0"
+			"bucket_position"			"1"
+
+			"item_description"			"Fires grenades
+
+The leading product of a leading salesman.
+
+Note: snoiper boom stick -Clock"
+			"item_logname"				"bigsniper"
+			"item_iconname"				"Bigshot"
+			"image_inventory"				"backpack/bigsniper/c_bigsniper"
+			"model_player"				"models/weapons/c_models/c_bigsniper/c_bigsniper.mdl"
+			"extra_wearable"			"models/player/items/policehat/policehat.mdl"
+			"attach_to_hands"				"1"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+//				"demoman"					"0" //I did give it to him at one point in testing. T-poses when scoping. -Clock
+			}
+			"static_attrs"
+			{
+				"Mombae weapon"							"1"
+				"Heavily modified"						"1"
+				"override projectile type" 				"3"
+				"override projectile type scoped" 		"3" //Was a rocket during this thing's first rework, but i did a quick test and I can do an additive explosion splice! -Clock
+			}
+			"attributes" //The main idea here is to give sniper a short range option which lets him sort of overcome corner peaking and slanted entry/exit paths, but limits his range to compensate. -Clock
+			{
+				"hide_attrib_additive" //Splicing the grenades default explosion radius in. TO DO: Is this radius accurate? -Clock
+				{
+					"attribute_class"	"mult_explosion_radius" //Btw, this is needed because it has none by default on non-explosive item types. -Clock
+					"value"				"146"
+				}
+				"rampup bonus" //Compared to none at all!
+				{
+					"attribute_class"	"mod_custom_rampup"
+					"value"				"1.4"
+				}
+				"sniper charge per sec"															// From S. Sleeper
+				{
+					"attribute_class"	"mult_sniper_charge_per_sec"
+					"value"				"1.33"
+				}
+				"explode on world"
+				{
+					"attribute_class"	"set_detonate_mode"
+					"value"				"3"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.5"
+				}
+				"longer damage falloff distance show" //Still want this to be fairly long range, just not problematically long! -Clock
+				{
+					"attribute_class"	"DISPLAY_ONLY" //Apperently sniper rifles just have a longer falloff range to begin with. 
+					"value"				"2"
+				}
+				"hide_attrib_percentage"
+				{
+					"attribute_class"	"mult_falloff_distance" //No idea how much longer.. just.. longer. -Clock
+					"value"				"1.25"
+				}
+				"blast splash damage decreased"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"0.9"
+				}
+				"hide_attrib_percentage" //All explosive splash damage from grenades is usually reduced by 50%, which makes no sense here! -Clock
+				{
+					"attribute_class"	"mult_explosion_splash_damage"
+					"value"				"1.8"
+				}
+				"hide_attrib_additive"
+				{
+					"attribute_class"	"mod_rocket_gravity"
+					"value"				"0.6"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.30"
+				}
+				"deploy time increased"
+				{
+					"attribute_class"	"mult_deploy_time"
+					"value" 			"1.30"
+				}
+				"shorter damage falloff distance"
+				{
+					"attribute_class"	"mult_falloff_distance"
+					"value" 			"0.75"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.6"
+				}
+				"projectiles can be deflected"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"3"
+				}
+				"custom projectile model"			//Uses the iron bomber projectitle model! -Clock
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models\weapons\w_models\w_quadball_grenade.mdl"
+				}
+				"hide_attrib_additive"
+				{
+					"attribute_class"	"mult_decloak_rate"										// For the balisong/vanish, the lowest possible number i've found it can be before the game just goes "no, screw you" and rejects it. -Clock
+					"value"				"0.02"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+				"sound_single_shot"		"Weapon_BigSniper.Single"
+				"sound_burst"			"Weapon_BigSniper.SingleCrit"
+			}
 		}
 	}
 	"attributes"
