@@ -209,8 +209,8 @@ Reworked by: 'The One Of Wonders'"
 			{
 				"test attribute 4"
 				{
-					"attribute_class"	"banner_boost"
-					"value"				"1 450 8 112"
+					"attribute_class"	"chatgpt_apology"
+					"value"				"1"
 				}
 			}
 		}
