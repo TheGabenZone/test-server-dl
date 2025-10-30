@@ -210,7 +210,30 @@ Reworked by: 'The One Of Wonders'"
 				"test attribute 4"
 				{
 					"attribute_class"	"banner_boost"
-					"value"				"1 600 8 121 111"
+					"value"				"1 600 8 450 1 121 111"
+				}
+			}
+		}
+		"10004"
+		{
+			"name"						"TF_WEAPON_FISTS_Test"
+			"prefab"					"weapon_fists"
+			"show_in_armory"			"1"
+
+			"item_quality"				"rarity2"
+
+			"propername"				"1"
+			"item_name"					"The Test Fists"
+			"item_type_name"			"Fists"
+			"item_description"			"#TF_Weapon_Fists_Desc"
+			"model_player"				"models/weapons/v_models/v_fist_heavy.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"test attribute 5"
+				{
+					"attribute_class"	"mult_minicrit_dmg"
+					"value"				"1.5"
 				}
 			}
 		}
@@ -244,6 +267,14 @@ Reworked by: 'The One Of Wonders'"
 		"10003"
 		{
 			"name"					"test attribute 4"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10004"
+		{
+			"name"					"test attribute 5"
 			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
