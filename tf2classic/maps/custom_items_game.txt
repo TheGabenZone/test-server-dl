@@ -237,6 +237,84 @@ Reworked by: 'The One Of Wonders'"
 				}
 			}
 		}
+		"10005"
+		{
+			"name"						"TF_WEAPON_GASCAN"
+			"item_class"				"tf_weapon_grenade_mirv"								// Same deal as Jarate, BUT it had to be its own independent weapon! No prefabs, those were causing weirdness.
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+			"anim_slot"					"melee"
+			
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"propername"				"1"
+			"item_quality"				"rarity3"
+			"item_name"					"The Gas Passer"
+			"item_type_name"			"Jerry Can"
+			"item_description"			"
+When thrown, produces an explosion of fire that ignites enemies after a small delay
+
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"jar_gas"
+			"item_iconname"				"jar_gas"
+			"image_inventory"			"backpack/weapons/c_models/c_gascan/c_gascan"
+			"model_world"				"models/weapons/w_models/w_gascan.mdl"
+			"model_player"				"models/weapons/v_models/v_gascan_pyro.mdl"
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/pyro_firemans_essentials_backpack.mdl"	// This used to go with the Spray n' Pray, but I decided it was better to signpost this item instead!
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"static_attrs"																		// Just some small backend stuff to make it behave... well, not like the Gas Passer in Live TF2, but a general purpose grenade.
+			{
+				"override projectile type" 				"3"										// Pipe Bomb. Unlike Jarate, this actually does damage, so give 'em a second to process the threat.
+				"damage bonus hidden"					"0.035"									// This actually DOES damage too that isn't fire damage! 45 on a direct hit, so not much but nothing exactly to sneeze at either. Expect less on avg, however.
+				"allowed in medieval mode"				"1"
+				"min_viewmodel_offset"					"10 0 -10"								// Fix for v1.5.1 -- Adds in settings for min viewmodels where they were absent before.
+				"special taunt"							"1"
+			}
+			"attributes"
+			{
+				"custom projectile model"														// Gas Can model
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_gascan.mdl"
+				}
+				// Backend stuff. Also yes, none of the below is actually what the attribute name suggests.
+				"mult_item_meter_charge_rate"													// Charge Rate
+				{
+					"attribute_class"	"effectbar_recharge_rate"
+					"value"				"1.8"													// More specifically, this recharges in 18 seconds.
+				}
+				"voice pitch scale"																// So you don't instagib yourself.
+				{
+					"attribute_class"	"blast_dmg_to_self"
+					"value" 			"0"
+				}
+				"damage force increase hidden"													// Unlike my other weapons based on explosives, you CANNOT jump with this weapon by design. It explodes harmlessly (to you) under your feet.
+				{
+					"attribute_class"	"mult_dmgself_push_force"
+					"value" 			"0"
+				}
+				"test attribute 6"													// Unlike my other weapons based on explosives, you CANNOT jump with this weapon by design. It explodes harmlessly (to you) under your feet.
+				{
+					"attribute_class"	"incinerator_gas"
+					"value" 			"1 8 8"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_GasCan.Throw"
+				"sound_burst"			"Weapon_GasCan.Throw"
+				"sound_special1"		"Weapon_GasCan.Explode"
+				"sound_special2"		"Weapon_GasCan.Explode"
+				"sound_special3"		"Weapon_GasCan.Throw"
+			}
+			"mouse_pressed_sound"		"#ui/item_paint_can_pickup.wav"
+			"drop_sound"				"#ui/item_bottle_drop.wav"
+		}
 	}
 	"attributes"
 	{
@@ -275,6 +353,14 @@ Reworked by: 'The One Of Wonders'"
 		"10004"
 		{
 			"name"					"test attribute 5"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10005"
+		{
+			"name"					"test attribute 6"
 			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
