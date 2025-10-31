@@ -210,7 +210,7 @@ Reworked by: 'The One Of Wonders'"
 				"test attribute 4"
 				{
 					"attribute_class"	"custom_banner_boost"
-					"value"				"1 600 8 450 1 121 111"
+					"value"				"1 600 8 450 1 1 121 111"
 				}
 			}
 		}
