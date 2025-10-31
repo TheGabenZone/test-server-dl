@@ -97,7 +97,7 @@ Reworked by: 'The One Of Wonders'"
 				}
 				"test attribute"
 				{
-					"attribute_class"	"wearer_can_jump_while_charging"
+					"attribute_class"	"custom_wearer_can_jump_while_charging"
 					"value"				"1"
 				}
 			}
@@ -123,7 +123,7 @@ Reworked by: 'The One Of Wonders'"
 			{
 				"test attribute 2"
 				{
-					"attribute_class"	"blast_jumping_miss_boost"
+					"attribute_class"	"custom_blast_jumping_miss_boost"
 					"value"				"1 2.5"
 				}
 			}
@@ -175,7 +175,7 @@ Reworked by: 'The One Of Wonders'"
 			{
 				"test attribute 3"
 				{
-					"attribute_class"	"bonk_consumption_boost"
+					"attribute_class"	"custom_bonk_consumption_boost"
 					"value"				"1 10 4"
 				}
 			}
@@ -209,7 +209,7 @@ Reworked by: 'The One Of Wonders'"
 			{
 				"test attribute 4"
 				{
-					"attribute_class"	"banner_boost"
+					"attribute_class"	"custom_banner_boost"
 					"value"				"1 600 8 450 1 121 111"
 				}
 			}
@@ -232,7 +232,7 @@ Reworked by: 'The One Of Wonders'"
 			{
 				"test attribute 5"
 				{
-					"attribute_class"	"mult_minicrit_dmg"
+					"attribute_class"	"custom_mult_minicrit_dmg"
 					"value"				"1.5"
 				}
 			}
@@ -314,6 +314,128 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_paint_can_pickup.wav"
 			"drop_sound"				"#ui/item_bottle_drop.wav"
 		}
+		"10006"
+		{
+			"name"						"TF_WEAPON_SHOTGUN_Test"
+			"prefab"					"weapon_shotgun"
+			"show_in_armory"			"1"
+
+			"item_quality"				"rarity2"
+
+			"propername"				"1"
+			"item_name"					"The Test Shotgun"
+			"item_type_name"			"Shotgun"
+			"item_description"			"#TF_Weapon_Shotgun_Soldier_Desc"
+			"item_slot"					"secondary"
+			"model_world"				"models/weapons/w_models/w_shotgun.mdl"
+			"model_player"				"models/weapons/v_models/v_shotgun_soldier.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"test attribute 7"
+				{
+					"attribute_class"	"custom_dmg_vs_grounded_players"
+					"value"				"1.5"
+				}
+			}
+		}		
+		"10007"
+		{
+		    "name"						"TF_WEARABLE_DEMO_COP_SHIELD"						
+			"item_class"				"tf_wearable"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+
+			"item_name_color"           "190 200 233 255"
+
+			"equip_region"				"shirt"											
+			"anim_slot"					"FORCE_NOT_USED"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"propername"				"0"
+			"item_name"					"Bobby's Bashin' Shield"
+			"item_logname"				"Bobby's Bashin' Shield"
+			"item_iconname"				"Bobby's Bashin' Shield"
+			"item_type_name"			"Riot Shield"
+			"item_description"			"Alt-Fire: Perform a short charge to deal high impact damage! (15 sec cooldown)
+  
+Model by: 'Elbagast, boomsta'
+Wearable by: 'Reagy'"
+			"image_inventory"			"backpack/weapons/c_models/c_democop_shield"
+			"model_player"				"models/player/items/custom/demo/democop_shield.mdl"
+			"extra_wearable"			"models/player/items/custom/demo/democop_shield.mdl"
+			"used_by_classes"
+			{
+				"demoman"					"1"
+			}
+			"loadondemand"					"1"
+			"act_as_wearable"				"1"
+			"static_attrs"
+			{
+				"class select override vcd"				"taunt02"
+			}
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+				"dmg taken from bullets reduced" // This is more of a utility item, so things changed a bit here.
+				{
+					"attribute_class"	"mult_dmgtaken_from_bullets"
+					"value"				"0.85"
+				}
+				"dmg taken from fire reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"				"0.67"
+				}
+				"dmg taken from blast splash reduced" 
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions_splash"
+					"value"				"0.85"
+				}
+				"wearable add cond on right click"
+				{
+					"attribute_class"	"add_wearable_cond_on_secondary_attack"
+					"value"				"17 0.75 15"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" 			"1.5"
+				}
+				"weapon_stattrak_module_scale" //65 dmg charge!									
+				{
+					"attribute_class"	"mult_shield_bash_damage"
+					"value"				"1.3"
+				}
+				"full charge turn control"														
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"50"													
+				}
+				"move speed bonus" 						
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" 			"1.05"
+				}
+				"Wearable Secondary Replacer"
+                {
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"test attribute 8"
+                {
+					"attribute_class"	"custom_parachute_enabled"
+					"value"				"1 0.5 1 0.5"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_pack_pickup.wav"
+			"drop_sound"				"#ui/item_pack_drop.wav"
+		}
 	}
 	"attributes"
 	{
@@ -360,6 +482,22 @@ Weapon from: New Old Weapons Pack"
 		"10005"
 		{
 			"name"					"test attribute 6"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10006"
+		{
+			"name"					"test attribute 7"
+			"description_string"	"Test attribute"
+			"attribute_type"		"string"							
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10007"
+		{
+			"name"					"test attribute 8"
 			"description_string"	"Test attribute"
 			"attribute_type"		"string"							
 			"description_format"	"value_is_additive"
