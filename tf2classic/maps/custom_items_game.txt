@@ -269,7 +269,6 @@ Weapon from: New Old Weapons Pack"
 			}
 			"static_attrs"																		// Just some small backend stuff to make it behave... well, not like the Gas Passer in Live TF2, but a general purpose grenade.
 			{
-				"override projectile type" 				"3"										// Pipe Bomb. Unlike Jarate, this actually does damage, so give 'em a second to process the threat.
 				"damage bonus hidden"					"0.035"									// This actually DOES damage too that isn't fire damage! 45 on a direct hit, so not much but nothing exactly to sneeze at either. Expect less on avg, however.
 				"allowed in medieval mode"				"1"
 				"min_viewmodel_offset"					"10 0 -10"								// Fix for v1.5.1 -- Adds in settings for min viewmodels where they were absent before.
