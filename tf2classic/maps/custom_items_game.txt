@@ -240,7 +240,7 @@ Reworked by: 'The One Of Wonders'"
 		"10005"
 		{
 			"name"						"TF_WEAPON_GASCAN"
-			"item_class"				"tf_weapon_throwable"								// Same deal as Jarate, BUT it had to be its own independent weapon! No prefabs, those were causing weirdness.
+			"item_class"				"tf_weapon_brick"								// Same deal as Jarate, BUT it had to be its own independent weapon! No prefabs, those were causing weirdness.
 			"show_in_armory"			"1"
 			"item_slot"					"secondary"
 			"anim_slot"					"melee"
